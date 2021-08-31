@@ -9,5 +9,5 @@ RUN apk update && \
     mv jbaaijens-savage* /usr/local/bin/SAVAGE && \
     echo -e '#!/usr/bin/env bash\nFULL_PATH=$(realpath $0)\ncd $(dirname $FULL_PATH)/SAVAGE\n./savage.py "$@"' > /usr/local/bin/savage && \
     chmod a+x /usr/local/bin/savage && \
-    cd /usr/local/bin/SAVAGE && make && cd / && \
+    cd /usr/local/bin/SAVAGE && make && cd /
     
